@@ -17,7 +17,8 @@ public class problem_three{
     }
     public static long getHighestPrimeFactor(long num){
         //calculate lowest val
-        Long divisor = Math.sqrt(num);
+        double sqrt = (double) num;
+        Long divisor = Math.sqrt(sqrt);
         for(long i = divisor; i > 0; i--){
             System.out.println(i);        
             if(num % i == 0 && isPrime(i) == true){
