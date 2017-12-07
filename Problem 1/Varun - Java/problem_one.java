@@ -9,8 +9,6 @@ public class problem_one {
             if((i%3 == 0) || (i%5 == 0)){
                 System.out.println(sum);
                 sum += i;
-            }else{
-                continue;
             }
         }
         return sum;
