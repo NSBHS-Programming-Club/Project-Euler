@@ -9,6 +9,7 @@ Check out my LAN-server based chat project at https://github.com/8itMiner/Coffee
 
 import java.util.ArrayList;
 public class Problem1 {
+	static int sum;
 	static ArrayList<String> solutions = new ArrayList<String>();
 	public static void main(String[] args) {
 		for(int i = 0;i < 1000;i++) {
@@ -16,6 +17,11 @@ public class Problem1 {
 				solutions.add(Integer.toString(i));
 			}
 		}
-		System.out.println(solutions);
+		
+		for(int i = 0;i < solutions.size() ;i++) {
+			sum = sum + Integer.parseInt(solutions.get(i));
+		}
+		System.out.println("All multiples of 3 or 5 : " + solutions);
+		System.out.println("Answer to problem : " + sum);
 	}
 }
